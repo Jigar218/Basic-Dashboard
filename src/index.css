@@ -34,7 +34,9 @@
   font-size: 20px;
   font-weight: 600;
 }
-
+.close-style {
+  color: rgb(0, 0, 0) !important;
+}
 /* Mobile behavior */
 @media (max-width: 768px) {
   .sidebar {
@@ -90,7 +92,9 @@ body.dark-mode .home-text {
 body.dark-mode .home-text-subtitle {
   color: rgba(255, 255, 255, 0.753) !important;
 }
-
+body.dark-mode .close-style {
+  color: rgb(255, 255, 255) !important;
+}
 /* table  */
 /* Table rows as cards */
 .user-table tbody tr.user-row {
