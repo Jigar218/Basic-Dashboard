@@ -41,7 +41,7 @@ const Settings = () => {
           <label className="form-label fw-semibold">Username</label>
           <input
             type="text"
-            className="form-control"
+            className="form-control input-style"
             placeholder="Enter your username"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
