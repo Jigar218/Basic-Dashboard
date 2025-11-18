@@ -1,0 +1,146 @@
+.textcolor {
+  color: #161616b2 !important;
+}
+
+.active-class {
+  --tw-text-opacity: 1;
+  color: white !important;
+  background: rgb(123 108 240 / var(--tw-text-opacity)) !important;
+}
+/* Sidebar container */
+.sidebar {
+  box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Nav links */
+.sidebar .nav-link {
+  font-size: 18px;
+}
+
+/* Hover */
+.sidebar .nav-link:hover {
+  background: #f2f2f3f3;
+}
+
+/* Active */
+.sidebar .nav-link.active {
+  background: #0d6efd;
+  color: white;
+  font-weight: 600;
+}
+
+/* Sidebar title */
+.sidebar h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Mobile behavior */
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-100%);
+  }
+}
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .bg-white {
+  background-color: #1e1e1e !important;
+}
+
+body.dark-mode .form-control {
+  background-color: #2c2c2c;
+  color: #e0e0e0;
+  border-color: #444;
+}
+
+body.dark-mode .btn-primary {
+  background-color: #bb86fc;
+  border-color: #bb86fc;
+  color: #121212;
+}
+
+body.dark-mode .setting-title {
+  color: white !important;
+}
+body.dark-mode .input-style::placeholder {
+  color: rgb(187, 184, 184) !important;
+}
+body.dark-mode .sidebar {
+  background-color: #1e1e1e !important;
+}
+body.dark-mode .textcolor,
+body.dark-mode hr,
+body.dark-mode .sidebar-title {
+  color: white !important;
+}
+body.dark-mode .sidebar .nav-link:hover {
+  background: #ffffff1c;
+}
+body.dark-mode .navbar {
+  background-color: #121212 !important;
+  border-bottom-color: rgba(100, 97, 97, 0.473) !important;
+}
+body.dark-mode .home-text {
+  color: rgb(255, 255, 255) !important;
+}
+body.dark-mode .home-text-subtitle {
+  color: rgba(255, 255, 255, 0.753) !important;
+}
+
+/* table  */
+/* Table rows as cards */
+.user-table tbody tr.user-row {
+  background-color: #f8f9fa; /* light mode */
+  border-radius: 12px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+/* Remove td background override */
+.user-table tbody tr.user-row td {
+  background-color: transparent; /* inherit from row */
+  border: none; /* remove borders from td */
+}
+
+/* Hover effect */
+.user-table tbody tr.user-row:hover {
+  transform: scaleY(1.009);
+  background-color: #e9ecef;
+}
+
+/* Profile image border */
+.profile-img {
+  border: 1px solid #ccc;
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Dark mode */
+body.dark-mode .user-table tbody tr.user-row {
+  background-color: #2c2c2c;
+  padding: 12px;
+  text-align: center;
+}
+body.dark-mode table thead tr th {
+  background-color: #1b1b1b !important;
+  padding: 12px;
+  text-align: center;
+}
+
+body.dark-mode .user-table tbody tr.user-row:hover {
+  background-color: #3a3a3a;
+}
+
+body.dark-mode .profile-img {
+  border: 1px solid #555;
+}
+
+body.dark-mode td,
+body.dark-mode th {
+  color: #e0e0e0;
+}
