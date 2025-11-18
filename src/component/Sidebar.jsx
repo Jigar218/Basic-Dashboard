@@ -34,7 +34,7 @@ const Sidebar = ({ isOpen, closeSidebar }) => {
           Dashboard
         </h4>
         <button
-          className="btn btn-sm text-white bg-none d-md-none mt-2 ms-3 "
+          className="btn btn-sm close-style bg-none d-md-none mt-2 ms-3 "
           onClick={closeSidebar}
         >
           ✕
